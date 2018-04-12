@@ -1,0 +1,23 @@
+实现可信计算中的可信引导、全盘加密、静态度量、动态度量等功能，此外将国密算法移植进入openssl、实现RPM包自动验签。。。
+
+1、shim-12-1.el7.centos.src.rpm ---修改屏蔽MOK导入删除等等
+
+2、shim-signed-12-1.el7.centos.src.rpm ---修改公私钥等
+
+3、grub2-2.02-0.64.el7.centos.src.rpm ---修改界面、公私钥等
+
+4、kernel-3.10.0-693.el7.src.rpm ---TPM2.0(国民技术芯片)适配、systemd验证、动态度量、局部静态度量等
+
+5、systemd-219-42.el7.centos.4.src.rpm  ---ima策略、私钥导入等
+
+6、ima-xdja-1.0-1.el7.centos.src.rpm  ---自定义服务，主要应用ima文件首次签名
+
+7、ima-evm-utils-1.0-2.el7.centos.src.rpm  ---ima工具
+
+8、dima-xdja-1.0-1.el7.centos.src.rpm  ---动态度量
+
+9、tpm2-luks-1.0-1.el7.centos.src.rpm  ---TPM2.0全盘加密
+
+10、rpm-4.11.3-25.el7.centos.src.rpm  ---rpm install 自动验签
+
+11、openssl-1.0.2k-8.el7.centos.src.rpm  ---国密openssl
